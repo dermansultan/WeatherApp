@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background-color: #F8F8FB;
+}
+
+/* Banner */
+.headerBanner{
+  width: 100%;
+  background: #2C71C2;
+  height: 35px;
+}
+
+.headerTitle{
+  color: white;
+}
+
+.appContainer{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FindWeather{
+  padding-top: 10px;
+  color: #A0A0A0;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.weatherForm{
+  margin-top: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  filter: drop-shadow(0px 4px 4px rgba(180, 180, 180, 0.25));
+}
+
+.btnWrapper{
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+.searchBtn{
+  width: 30px;
+  color: #086929;
+  height: 30px;
+  font-size: 12px;
+  border: 0;
+  background: #5BF8BF;
+  box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
+  border-radius: 3px;
+  filter: drop-shadow(0px 2px 0px #3A8268);
+}
+
+.locationBtn{
+  margin-right: 5px;
+  color:white;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  border: 0;
+  background: #4F9AF1;
+  box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
+  border-radius: 3px;
+  filter: drop-shadow(0px 2px 0px #2C71C2);
+
+}
+
+.loadingDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Weather Card Selectors */
+
+.weatherCardWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.cardContainer{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+width: 300px;
+min-height: 311px;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(180, 180, 180, 0.25);
+border-radius: 10px;
+}
+
+.weatherMain{
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.IconTempWrapper{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+}
+
+.cardCityName{
+color: #A0A0A0;
+text-align: center;
+font-weight: 300;
+font-size: 14px;
+padding-bottom: 30px;
+}
+
+.cardTemp{
+font-weight: normal;
+color: #4F9AF1;
+font-size: 50px;
+}
+
+.cardWeatherDesc{
+  padding-top: 20px;
+  color: #A0A0A0;
+  font-weight: normal;
+font-size: 18px;
+  text-align: center;
+}
+
+.weatherIcon{
+  width: 89px;
+  height: 89px;
+}
+
+.weatherConditions{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.conditionSquare{
+  margin: 5px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+text-align: center;
+width: 98px;
+min-height: 60px;
+font-size: 12px;
+background: #FAF8F8;
+border-radius: 4px;
+}
+
+.conditionTitle{
+  color: #A0A0A0;
+  font-weight: normal;
+
+}
+
+.conditionInfo{
+  color: #A0A0A0;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.switchContainer{
+  padding-top: 12px;
+}
+
+/* Toggle Btn CSS */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2C71C2;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 6px;
+  bottom: 8px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2C71C2;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+
+.on
+{
+  display: none;
+}
+
+.on, .off
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  width: 70px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}
+
+/* Search Selectors */
+
+.searchWrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.searchedCity{
+border: 0;
+width: 68%;
+height: 29.95px;
+background: #EEEEEE;
+color: #A0A0A0;
+font-weight: 300;
+font-size: 11px;
+padding-left: 8px;
+}
+
+.countrySelect{
+  padding-left: 5px;
+  background: #EEEEEE;
+  color: #A0A0A0;
+  font-weight: 300;
+  font-size: 11px;
+  border: 0;
+  height: 30px;
+  width: 30%;
+}
