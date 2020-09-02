@@ -1,9 +1,8 @@
 import React from 'react';
-import UnitToggleSwitch from './UnitToggleSwitch'
-function Header(prop){
+function Header(){
     return(
         <div className='headerBanner'>
-        <h1 className='headerTitle'></h1>
+        <h1 className='headerTitle'>WeatherApp</h1>
         </div>
     )
 }

@@ -12,13 +12,26 @@ body{
 
 /* Banner */
 .headerBanner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background: #2C71C2;
-  height: 35px;
+  height: 60px;
 }
 
 .headerTitle{
   color: white;
+}
+
+.footer{
+  color: #A0A0A0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: 100%;
 }
 
 .appContainer{
