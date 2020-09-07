@@ -1,5 +1,8 @@
 ## React Weather App
 
-App created using React + OpenWeather API. 
+[Live Demo:](https://dermansultan.github.io/WeatherApp/)
+
+App created using React + [OpenWeather API](https://openweathermap.org/current) 
+
 Featuring: Geolocation, and Country/City search. 
 
