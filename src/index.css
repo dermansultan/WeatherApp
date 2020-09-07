@@ -103,6 +103,8 @@ body{
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .cardContainer{
