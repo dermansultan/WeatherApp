@@ -195,7 +195,10 @@ border-radius: 4px;
 }
 
 .switchContainer{
-  padding-top: 12px;
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 10px;
 }
 
 /* Toggle Btn CSS */
@@ -305,4 +308,54 @@ padding-left: 8px;
   border: 0;
   height: 30px;
   width: 30%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .conditionSquare{
+    width: 195px;
+    }
+    
+    .cardContainer, .switchContainer {
+    width: 588px;
+    }
+    
+    .weatherIcon{
+    width: 120px;
+    height: auto;
+    }
+    
+    .cardTemp {
+    font-size: 55px;
+    }
+    
+    .cardCityName{
+    font-size: 24px; 
+    }
+    
+    .cardWeatherDesc{
+    font-size: 20px; 
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

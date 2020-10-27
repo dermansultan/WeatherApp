@@ -40,6 +40,7 @@ function WeatherCard(props){
             <p className='conditionInfo'>{props.fetchedObj.visibility + ' km'}</p>
         </div>
     </div>
+    {/*Put Weather Conditions*/}
 </div>
                 : <div className='noSearch'>Choose a country and enter a city.</div>}
             </div>
