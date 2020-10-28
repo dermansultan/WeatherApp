@@ -7,7 +7,7 @@ function WeatherCard(props){
     <div className='weatherMain'>
         <h4 className='cardCityName'>{props.fetchedObj.name.replace(/['"]+/g, '')}</h4>
         <div className='IconTempWrapper'>
-        <img className='weatherIcon' alt='weatherIcon' src={`https://openweathermap.org/img/wn/${props.fetchedObj.img}@2x.png`}></img>
+        <img className='weatherIcon' alt={props.fetchedObj.weatherParam.replace(/['"]+/g, '') + " Icon"} src={`https://openweathermap.org/img/wn/${props.fetchedObj.img}@2x.png`}></img>
         <h1 className='cardTemp'>{
             props.weatherUnit ? Math.round((props.fetchedObj['main'].temp - 273.15) *10 ) /10 + ' °C' : Math.round(((props.fetchedObj['main'].temp - 273.15) * 9/5 + 32) *10 ) /10 + ' °F'
             }</h1>
@@ -40,7 +40,6 @@ function WeatherCard(props){
             <p className='conditionInfo'>{props.fetchedObj.visibility + ' km'}</p>
         </div>
     </div>
-    {/*Put Weather Conditions*/}
 </div>
                 : <div className='noSearch'>Choose a country and enter a city.</div>}
             </div>
