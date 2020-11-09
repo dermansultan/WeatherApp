@@ -1,8 +1,10 @@
 import React from 'react';
+import textLogo from '../img/Logo.png'
+
 function Header(){
     return(
         <div className='headerBanner'>
-        <h1 className='headerTitle'>WeatherApp</h1>
+        <img className='headerLogo' src={textLogo} alt='climateLogo' unselectable='on'/>
         </div>
     )
 }
